@@ -25,7 +25,6 @@
             CredentialsProvider="axshD0XP67KzdsgEcfLd~-rhFs_Pfc5KdST0lT07Ceg~Akj3gmDa1sNNc-tsS8oNvciwZtjEGmtyoNF_zf3Udm0PDdZrYAvLN8Zmk279_BFW"           
             Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Padding="5"
             Center="39.3683,-95.2734,0.0000" ZoomLevel="4.000" AnimationLevel="None" Margin="0,0,0,44" >
-            <!--<TextBox HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text=" Zip Code" VerticalAlignment="Top" Width="90" Margin="916,10,0,0"/>-->
         </m:Map>
         <StackPanel Orientation="Horizontal" Opacity="0.7" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">
             <Button x:Name="btnNorthAmerica" Click="ChangeMapView_Click" Tag="39.3683,-95.2734,0.0000 4.0000" Margin="5">
@@ -61,8 +60,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="60*"/>
             </Grid.ColumnDefinitions>
-            <TextBox  Width="162"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="textBoxZipSearch" Margin="0,8,83,8" Height="28" Grid.Column="1"/>
-            <TextBlock IsHitTestVisible="False" Text="Enter ZIP code here" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,13,95,8" Foreground="DarkGray" Width="139" Height="23" Grid.Column="1">
+            <TextBox  Width="84"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="textBoxZipSearch" Margin="10,10,83,10" Height="20" Grid.Column="1"/>
+            <TextBlock IsHitTestVisible="False" Text="  ZIP Code" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,14,83,10" Foreground="DarkGray" Width="84" Height="20" Grid.Column="1">
                 <TextBlock.Style>
                     <Style TargetType="{x:Type TextBlock}">
                         <Setter Property="Visibility" Value="Collapsed"/>
@@ -74,7 +73,7 @@
                     </Style>
                 </TextBlock.Style>
             </TextBlock>
-            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="892,8,0,8" VerticalAlignment="Center" Width="68" Height="28" Grid.Column="1"/>
+            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Center" Margin="892,10,0,10" VerticalAlignment="Center" Width="68" Height="20" Grid.Column="1"/>
         </Grid>
     </Grid>
 </Window>
