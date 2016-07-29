@@ -42,7 +42,7 @@
             <Button x:Name="btnVancouver" Click="ChangeMapView_Click" Tag="49.2797,-123.1329,0.0000 13.0000" Margin="5">
                 <TextBlock>Vancouver</TextBlock>
             </Button>
-            <ComboBox SelectionChanged="AnimationLevel_SelectionChanged" SelectedIndex="1" Margin="10" Height="20">
+            <ComboBox SelectionChanged="AnimationLevel_SelectionChanged" SelectedIndex="1" Margin="10" Height="20" Width="56">
                 <ComboBoxItem Content="None" />
                 <ComboBoxItem Content="Full" />
             </ComboBox>
@@ -60,20 +60,20 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="60*"/>
             </Grid.ColumnDefinitions>
-            <TextBox  Width="84"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="textBoxZipSearch" Margin="10,10,83,10" Height="20" Grid.Column="1"/>
+            <TextBox  Width="84"  VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="txtTargetZip" Margin="10,10,83,10" Height="20" Grid.Column="1"/>
             <TextBlock IsHitTestVisible="False" Text="  ZIP Code" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,14,83,10" Foreground="DarkGray" Width="84" Height="20" Grid.Column="1">
                 <TextBlock.Style>
                     <Style TargetType="{x:Type TextBlock}">
                         <Setter Property="Visibility" Value="Collapsed"/>
                         <Style.Triggers>
-                            <DataTrigger Binding="{Binding Text, ElementName=textBoxZipSearch}" Value="">
+                            <DataTrigger Binding="{Binding Text, ElementName=txtTargetZip}" Value="">
                                 <Setter Property="Visibility" Value="Visible"/>
                             </DataTrigger>
                         </Style.Triggers>
                     </Style>
                 </TextBlock.Style>
             </TextBlock>
-            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Center" Margin="892,10,0,10" VerticalAlignment="Center" Width="68" Height="20" Grid.Column="1"/>
+            <Button x:Name="btnSearch" Click="btnSearch_Click"  Content="Search" HorizontalAlignment="Center" Margin="892,10,0,10" VerticalAlignment="Center" Width="68" Height="20" Grid.Column="1"/>
         </Grid>
     </Grid>
 </Window>

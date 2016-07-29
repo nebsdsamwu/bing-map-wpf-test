@@ -66,10 +66,14 @@ namespace WPFTestApplication
             }
         }
 
-        private void Search_Click(object sender, RoutedEventArgs e)
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            string[] tagInfo = ((Button)sender).Tag.ToString().Split(' ');
+            MessageBox.Show(TargetZip);
+        }
 
+        public string TargetZip
+        {
+            get { return txtTargetZip.Text; }
         }
     }
 }
