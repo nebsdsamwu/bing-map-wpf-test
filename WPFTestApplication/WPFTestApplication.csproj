@@ -56,8 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="FedExLocatorViews.xaml.cs">
-      <DependentUpon>FedExLocatorViews.xaml</DependentUpon>
+    <Compile Include="SwitchMapViews.xaml.cs">
+      <DependentUpon>SwitchMapViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="FedExLocator.xaml.cs">
       <DependentUpon>FedExLocator.xaml</DependentUpon>
@@ -74,7 +74,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="FedExLocatorViews.xaml">
+    <Page Include="SwitchMapViews.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
