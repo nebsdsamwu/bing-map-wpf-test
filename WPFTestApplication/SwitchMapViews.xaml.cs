@@ -68,7 +68,14 @@ namespace WPFTestApplication
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(TargetZip);
+            if (TargetZip.Trim() == "")
+            {
+                MessageBox.Show("Please enter a ZIP code");
+            }
+            else
+            {
+                MessageBox.Show(TargetZip);
+            }
         }
 
         public string TargetZip
